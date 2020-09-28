@@ -1,0 +1,42 @@
+{
+	"name": "@purple/serverless-git-branch-stage-plugin",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=12"
+	},
+	"author": "Filip Pyrek <fpyrek@purple-technology.com>",
+	"description": "Serverless Framework Plugin for transforming git branch name to a Serverless stage name",
+	"license": "MIT",
+	"main": "src/index.js",
+	"scripts": {
+		"test:lint": "eslint ./src/**/*.js",
+		"test:lint:fix": "npm run test:lint -- --fix"
+	},
+	"homepage": "https://github.com/purple-technology/serverless-git-branch-stage-plugin#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/purple-technology/serverless-git-branch-stage-plugin.git"
+	},
+	"bugs": {
+		"url": "https://github.com/purple-technology/serverless-git-branch-stage-plugin/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.9.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"husky": "^4.3.0",
+		"lint-staged": "^10.4.0",
+		"prettier": "^1.19.1"
+	},
+	"lint-staged": {
+		"src/**/*.js": [
+			"eslint"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	}
+}
