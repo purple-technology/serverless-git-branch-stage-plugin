@@ -1,6 +1,6 @@
 {
 	"name": "@purple/serverless-git-branch-stage-plugin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"node": ">=12"
 	},
