@@ -1,0 +1,9 @@
+.circleci
+.github
+.vscode
+.editorconfig
+.eslintignore
+.eslintrc.js
+.nvmrc
+.prettierrc.js
+CONTRIBUTING.md
