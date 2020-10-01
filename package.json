@@ -12,7 +12,7 @@
 		"test:lint": "eslint ./src/**/*.js",
 		"test:lint:fix": "npm run test:lint -- --fix",
 		"version": "",
-		"postversion": "git push && git push --tags && npm publish"
+		"postversion": "git push && git push --tags && npm publish --access public"
 	},
 	"homepage": "https://github.com/purple-technology/serverless-git-branch-stage-plugin#readme",
 	"repository": {
