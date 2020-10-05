@@ -1,4 +1,7 @@
 # serverless-git-branch-stage-plugin
+[![CI Status Badge](https://circleci.com/gh/purple-technology/serverless-git-branch-stage-plugin.svg?style=svg)](https://github.com/purple-technology/serverless-git-branch-stage-plugin)
+
+
 This plugin provides two Serverless variables:
 
 - `git:stage` - branch name converted to camel case 
