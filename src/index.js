@@ -19,7 +19,7 @@ module.exports = class ServerlessGitBranchStagePlugin {
 			serverless.variables
 		)
 		serverless.variables.getValueFromSource = variable => {
-			const matches = variable.match(/^git:stage:(stage|basePath)$/)
+			const matches = variable.match(/^git:(stage|basePath)$/)
 			if (matches === null) {
 				return delegate(variable)
 			}
