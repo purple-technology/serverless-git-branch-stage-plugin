@@ -38,3 +38,5 @@ module.exports = class ServerlessGitBranchStagePlugin {
 		}
 	}
 }
+
+module.exports.getBranch = getBranch
