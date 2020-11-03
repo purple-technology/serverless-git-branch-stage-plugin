@@ -22,7 +22,9 @@
 	"bugs": {
 		"url": "https://github.com/purple-technology/serverless-git-branch-stage-plugin/issues"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"camelcase": "^6.2.0"
+	},
 	"devDependencies": {
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.9.0",

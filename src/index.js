@@ -39,4 +39,5 @@ module.exports = class ServerlessGitBranchStagePlugin {
 	}
 }
 
-module.exports.getBranch = getBranch
+module.exports.getBasePath = () => toBasePath(getBranch())
+module.exports.getStage = () => camelcase(toBasePath(getBranch()))
