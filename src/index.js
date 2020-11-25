@@ -11,14 +11,14 @@ const getBranch = () =>
 				.toString('utf8')
 				.trim()
 
-const toBasePath = branch => branch.replace(/[^a-zA-Z0-9_]/g, '-')
+const toBasePath = (branch) => branch.replace(/[^a-zA-Z0-9_]/g, '-')
 
 module.exports = class ServerlessGitBranchStagePlugin {
 	constructor(serverless) {
 		const delegate = serverless.variables.getValueFromSource.bind(
 			serverless.variables
 		)
-		serverless.variables.getValueFromSource = variable => {
+		serverless.variables.getValueFromSource = (variable) => {
 			const matches = variable.match(/^git:(stage|basePath)$/)
 			if (matches === null) {
 				return delegate(variable)
