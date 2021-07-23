@@ -11,8 +11,9 @@
 	"scripts": {
 		"test:lint": "eslint ./src/**/*.js",
 		"test:lint:fix": "npm run test:lint -- --fix",
-		"version": "",
-		"postversion": "git push && git push --tags && npm publish --access public"
+		"release:changelog": "standard-version",
+		"release:publish": "git push --follow-tags && npm publish --access public",
+		"prepare": "husky install"
 	},
 	"homepage": "https://github.com/purple-technology/serverless-git-branch-stage-plugin#readme",
 	"repository": {
@@ -26,12 +27,15 @@
 		"camelcase": "^6.2.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-conventional": "^12.1.4",
 		"eslint": "^7.14.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"husky": "^6.0.0",
 		"lint-staged": "^11.0.0",
-		"prettier": "^2.2.0"
+		"prettier": "^2.2.0",
+		"standard-version": "^9.3.1"
 	},
 	"lint-staged": {
 		"src/**/*.js": [
